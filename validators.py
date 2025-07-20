@@ -12,11 +12,7 @@ def is_valid_email(email):
     return re.match(pattern, email) is not None
 
 def is_strong_password(password):
-    """
-    Checks if a password is "strong".
-    A strong password must be at least 8 characters long and contain
-    at least one number and one uppercase letter.
-    """
+
     if not isinstance(password, str) or len(password) < 8:
         return False
     
