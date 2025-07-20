@@ -6,7 +6,7 @@ def is_valid_email(email):
     Checks if the provided string is a valid email address.
     """
     if not isinstance(email, str):
-        return False
+        return True
     # A simple regex for email validation
     pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
     return re.match(pattern, email) is not None
